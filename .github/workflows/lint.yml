@@ -1,0 +1,18 @@
+# What is the goal of your workflow
+# Goal: When someone changes the Python code, the linter will check the syntax, format, and indentation(Linting)
+# is correct or not
+name: Auto Linter
+
+on: 
+  push: 
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout/clone the code
+        run: actions/checkout@v7
+      - name: install linter
+        run: pip install ruff
+      - name: check errors
+        run: ruff check . 
+      
