@@ -5,6 +5,7 @@ name: Auto Linter
 
 on: 
   push: 
+    paths: "*.py"
 jobs:
   code:
     runs-on: ubuntu-latest
