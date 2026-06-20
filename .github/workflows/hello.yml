@@ -15,8 +15,4 @@ jobs: #Jobs tells what the workflow should do
     steps: 
       - name: Say hello to everyone
         run: echo "Hello Dosto"
-    
-
-#Action
-# Should be inside the Steps
-
+  
